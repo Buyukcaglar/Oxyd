@@ -1,0 +1,25 @@
+{
+  "Baseline": {
+    "ExitCode": 1,
+    "Output": "DirectX7 CoCreateInstance: 0x80040154"
+  },
+  "ExplicitManifest": {
+    "ExitCode": 0,
+    "Output": [
+      "Local manifest activated.",
+      "DirectX7 CoCreateInstance: 0x00000000",
+      "DirectInputCreate: 0x00000000",
+      "CreateDevice GUID_SysMouse: 0x00000000",
+      "Loaded DLL: <probe-directory>\\dx7vb.dll (path normalized for publication)"
+    ]
+  },
+  "AutomaticAdjacentManifest": {
+    "ExitCode": 0,
+    "Output": [
+      "DirectX7 CoCreateInstance: 0x00000000",
+      "DirectInputCreate: 0x00000000",
+      "CreateDevice GUID_SysMouse: 0x00000000",
+      "Loaded DLL: <probe-directory>\\dx7vb.dll (path normalized for publication)"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+LIBRARY oxscale
+EXPORTS
+    OxScaleInit=_OxScaleInit@0
+    OxEnterFullscreen=_OxEnterFullscreen@12
+    OxEnterWindowed=_OxEnterWindowed@12
+    BitBlt=_OxBitBlt@36
+    StretchBlt=_OxStretchBlt@44
+    AlphaBlend=_OxAlphaBlend@44

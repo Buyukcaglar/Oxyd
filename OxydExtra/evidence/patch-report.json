@@ -1,0 +1,65 @@
+{
+  "original_sha256": "3a12b02496eb5b013d69ce1dd62cc5beb6a155a58ae6af9eccb9ed00db59e02f",
+  "patched_sha256": "4959c217a6dc45ab5847dc5db15d6d79c633af6d8a8d2868328e668a021f7028",
+  "original_entry_rva": "0xead8",
+  "patched_entry_rva": "0x2d7000",
+  "companion_imports": [
+    "OxScaleInit",
+    "OxEnterFullscreen",
+    "OxEnterWindowed"
+  ],
+  "patches": [
+    {
+      "file_offset": "0x4534B",
+      "original": "ff5074dbe2",
+      "patched": "e8d01c2900",
+      "purpose": "Enter native borderless fullscreen"
+    },
+    {
+      "file_offset": "0x453C3",
+      "original": "ff5278dbe2",
+      "patched": "83c41831c0",
+      "purpose": "Suppress 640x480 32-bpp SetDisplayMode; return S_OK"
+    },
+    {
+      "file_offset": "0x4542B",
+      "original": "ff5178dbe2",
+      "patched": "83c41831c0",
+      "purpose": "Suppress 640x480 16-bpp SetDisplayMode; return S_OK"
+    },
+    {
+      "file_offset": "0x45C59",
+      "original": "ff5170dbe2",
+      "patched": "83c40431c0",
+      "purpose": "Suppress RestoreDisplayMode; desktop mode remains untouched"
+    },
+    {
+      "file_offset": "0x45CAA",
+      "original": "ff5074dbe2",
+      "patched": "e881132900",
+      "purpose": "Retain original window-mode toggle"
+    },
+    {
+      "file_offset": "0x15768",
+      "original": "4c574100",
+      "patched": "80606d00",
+      "purpose": "Redirect game AlphaBlend to logical-frame presentation; offscreen calls pass through"
+    },
+    {
+      "file_offset": "0x158DC",
+      "original": "10504100",
+      "patched": "80606d00",
+      "purpose": "Redirect game BitBlt to logical-frame presentation; offscreen calls pass through"
+    },
+    {
+      "file_offset": "0x15E18",
+      "original": "10504100",
+      "patched": "80606d00",
+      "purpose": "Redirect game StretchBlt to logical-frame presentation; offscreen calls pass through"
+    }
+  ],
+  "resources_byte_identical": true,
+  "pe_checksum_valid": true,
+  "runtime_scaling": "max(1, min(monitor_client_width // 640, monitor_client_height // 480))",
+  "output": "OxydEx.exe"
+}

@@ -1,0 +1,15 @@
+# Local game installations, original backups, downloaded tools and diagnostics.
+/binaries/
+/diagnostics/
+/*.zip
+/OxydExtra/build/
+/OxydExtra/dist/
+__pycache__/
+*.pyc
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+Oxyd-native-display.log
+oxconfig.prf

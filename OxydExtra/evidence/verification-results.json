@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-05",
+  "architecture": "x86",
+  "companion_build": "passed with MSVC 14.51, /W4, /O2, /MT",
+  "desktop_geometry_cases": 6,
+  "nearest_neighbor_pixels_verified": 2764800,
+  "logical_framebuffer_pixels_verified": 307200,
+  "hidden_window_native_client": [
+    2560,
+    1600
+  ],
+  "hidden_window_vb_client": [
+    640,
+    480
+  ],
+  "desktop_mode_unchanged_by_hidden_window_probe": true,
+  "actual_patched_executable_windows_loader": "passed",
+  "bootstrap_reached_original_vb6_entry_point": true,
+  "bootstrap_dpi_awareness_enabled": true,
+  "vb6_runtime_imports_redirected": 4,
+  "game_entry_point_executed_during_loader_probe": false,
+  "actual_game_visual_and_gameplay_acceptance": "pending user check",
+  "embedded_resources_unchanged": true,
+  "exe_pe_checksum_valid": true,
+  "exe_pefile_warnings": [],
+  "publication_build": "passed with discovered x86 MSVC toolset using tools/build.ps1",
+  "publication_executable_reproduced_byte_identical": true
+}

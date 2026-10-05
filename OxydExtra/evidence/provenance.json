@@ -1,0 +1,32 @@
+{
+  "recorded_date": "2026-10-05",
+  "game": {
+    "version": "Oxyd Extra 2.0.0",
+    "architecture": "x86",
+    "original_executable_sha256": "3a12b02496eb5b013d69ce1dd62cc5beb6a155a58ae6af9eccb9ed00db59e02f",
+    "patched_executable_sha256": "4959c217a6dc45ab5847dc5db15d6d79c633af6d8a8d2868328e668a021f7028",
+    "original_resources_preserved": true
+  },
+  "dx7vb": {
+    "file": "dx7vb.dll",
+    "version": "4.07.00.0700",
+    "architecture": "x86",
+    "bytes": 605456,
+    "sha256": "1e710502e2fc3f70ce37618c5acf82b9ae75c0e5e43325a8b0a495d0a8e559d4",
+    "individually_authenticode_signed": false,
+    "source_container": "DX70eng.exe",
+    "source_url": "https://www.cs.tlu.ee/~meelis/download/DX70eng.exe",
+    "container_sha256": "7c2e73a4eb06a61c61c7fa141b9d34838feaa7f155fa62f5793218fef76f0742",
+    "container_authenticode_status": "Valid",
+    "container_signer": "Microsoft Corporation",
+    "installer_executed": false,
+    "container_published": false
+  },
+  "patch": {
+    "version": "0.1.0",
+    "source": "src/oxscale.cpp",
+    "prebuilt_oxscale_sha256": "2712971c4018662e47c39d0d79ba69025ccfa85fad3908f331c0ac8fb418a8e2",
+    "runtime_scale": "max(1, min(client_width // 640, client_height // 480))",
+    "license_scope": "MIT for authored patch source, scripts, tests, documentation, manifest, and oxscale.dll; third-party executable content and dx7vb.dll excluded"
+  }
+}

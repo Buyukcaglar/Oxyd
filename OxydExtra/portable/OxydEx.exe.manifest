@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity type="win32" name="OxydExtra.LocalDirectX7" version="2.0.0.0" processorArchitecture="x86" />
+  <file name="dx7vb.dll">
+    <comClass clsid="{E1211353-8E94-11D1-8808-00C04FC2C602}"
+              threadingModel="Both" description="DirectX7"
+              tlbid="{E1211242-8E94-11D1-8808-00C04FC2C602}" />
+    <typelib tlbid="{E1211242-8E94-11D1-8808-00C04FC2C602}"
+             version="1.0" helpdir="" resourceid="1" />
+  </file>
+</assembly>
